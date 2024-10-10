@@ -13,8 +13,8 @@
     <br>
     <br>
     <h2>Upload a File</h2>
-    <form action="" method="POST" enctype="multipart/form-data">
-        {{ csrf_field() }}
+    <form action="" method="post" enctype="multipart/form-data">
+        @csrf
         <label for="file">File</label>
         <input type="file" name="excel_file" id="file">
         <button type="submit">Upload</button>
